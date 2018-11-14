@@ -118,7 +118,7 @@ body {
   padding: 0;
 
   font-family: 'Raleway', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .main-body {
@@ -133,27 +133,73 @@ body {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: bold;
   width: 100%;
   text-align: center;
   color: #6B0B0B;
+  margin-bottom: 30px;
 }
+
+.main-body .about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 28px;
+}
+
+.main-body .about-section .about-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.main-body .about-section .about-text {
+  width: 220px;
+  height: 300px;
+}
+
+.main-body .about-section .about-text .about-section-hi {
+  color: #6B0B0B;
+  font-size: 2.4rem;
+}
+
+
+.main-body .experience-section {
+  width: 220px;
+  line-height: 3rem;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+}
+
+.main-body .experience-section .experience-text {
+  width: 100%;
+  position: relative;
+  left: 10%;
+}
+
+.main-body .experience-section .experience-text li {
+  margin-bottom: 10px;
+}
+
+.main-body .experience-section .experience-text .codecool {
+  width: 100%;
+  text-align: center;
+  margin-bottom: -40px;
+  font-size: 2.4rem;
+}
+
+.main-body .experience-section .experience-text .inside-list {
+  margin-top: 10px;
+}
+
+
 
 
 .main-body .skills {
-  font-size: 1.6rem;
-}
-
-@media screen and (min-width: 720px) {
-  
-  .main-body .skills {
-    display: flex;
-	  flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-  }
-
+  font-size: 1.8rem;
 }
 
 .main-body .skills .skill {
@@ -176,12 +222,139 @@ h3 {
   height: 20px;
 }
 
+@media screen and (min-width: 720px) {
+
+  .page-header .navigation .hamburger {
+    display: none;
+  }
+
+  .page-header .navigation .navigation-menu {
+    margin-top: 3rem;
+    visibility: visible;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    color: #FFFFFF;
+  }
+
+  .page-header .navigation .navigation-menu li {
+    margin-right: 20px;
+  }
+
+  .page-header .navigation .navigation-menu li:last-child {
+    margin-right: 40px;
+  }
+
+  .page-header .author-name {
+    font-size: 10rem;
+    margin-top: 9rem;
+  }
+  
+  .page-header .fullstack {
+    font-size: 5rem;
+  }
+
+  body {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 3.6rem;
+    margin-bottom: 40px;
+  }
+  
+  .main-body .skills {
+    display: flex;
+	  flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: 0px;
+  }
+
+  .main-body .about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 35px;
+  }
+  
+  .main-body .about-section .about-photo {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-right: 50px;
+  }
+  
+  .main-body .about-section .about-text {
+    width: 400px;
+    height: 450px;
+  }
+
+  .main-body .about-section .about-text .about-section-hi {
+    font-size: 3.7rem;
+  }
+
+  .main-body .experience-section {
+    width: 450px;
+    line-height: 4rem;
+  }
+
+  .main-body .experience-section .experience-text {
+    width: 100%;
+    position: relative;
+    left: 20%;
+  }
+
+}
+
+@media screen and (min-width: 1020px) {
+
+  .page-header .author-name {
+    font-size: 12rem;
+    margin-top: 4rem;
+  }
+  
+  .page-header .fullstack {
+    font-size: 6rem;
+  }
+
+  body {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 4rem;
+    margin-bottom: 40px;
+  }
+
+  .main-body .about-section .about-text .about-section-hi {
+    font-size: 4.1rem;
+  }
+
+  .main-body .about-section {
+  line-height: 40px;
+  }
+
+  .main-body .about-section .about-text {
+    width: 400px;
+    height: 300px;
+  }
+
+  .main-body .experience-section {
+    width: 800px;
+    line-height: 5rem;
+  }
+}
+
 /* footer! */
 
 .page-footer {
   box-sizing: border-box;
   position: relative;
   height: 14em;
+  text-align: center;
 
   font-size: 1.4rem;
 }
@@ -189,7 +362,7 @@ h3 {
 .page-footer .footer-header {
   width: 100%;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
 }
 
 .page-footer .footer-row {
